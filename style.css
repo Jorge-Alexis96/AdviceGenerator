@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+.body {
+  background-color: hsl(218, 23%, 16%);
+}
+
+.main {
+  justify-content: center;
+  padding-top: 30vh;
+}
+
+.main .card {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 50px 50px 70px 50px;
+  margin: auto;
+  width: 540px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.main .card .titleCard {
+  color: hsl(150, 100%, 66%);
+}
+
+.main .card .textCard {
+  margin: 35px 0px;
+  color: hsl(193, 38%, 86%)
+}
+
+.main .card .dividerDesktop {
+  display: block;
+}
+
+.main .card .dividerMobile {
+  display: none;
+}
+
+.main .card .buttonIcon {
+  width: 70px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
+
+@media(max-width:375px){
+  .main .card {
+    width: 80%;
+    font-size: 22px;
+  }
+  .main .card .dividerMobile {
+    display: block;
+    width:300px;
+  }
+  .main .card .dividerDesktop {
+    display: none;
+  }
+}
